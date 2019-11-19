@@ -8,9 +8,7 @@
 			background-image:url(/image/amour.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
-			
-			
-			
+
 			
 		}	
 
@@ -21,20 +19,33 @@
 			left: 50%;
 			transform : translateX(-50%) translateY(-50%); 
 			text-align: center;
-			background: #ddd;
+			background-image: url(/image/nice.jpg);
+			background-size: 600px;
+			background-position: center;
 			border: 1px solid #999;
 			padding: 10px;
 			box-shadow: 0 0 5px 3px #ccc;
+
 		}
 
 
 		.info {
 			font-size: 80px;
+			color: red;
 		}
+
+		.color {
+			color: red;
+		}
+
+		
+
 		</style>
 	</head>
 	<body>
+		
 		<table class="countdownContainer">
+			
 			<tr class="info">
 				<td colspan="4">-     15 Aout 2020     -</td>
 			</tr>
@@ -44,7 +55,7 @@
 				<td id="minutes">12</td>
 				<td id="seconds">22</td>
 			</tr>
-			<tr>
+			<tr class="color">
 				<td>Days</td>
 				<td>Hours</td>
 				<td>Minutes</td>
@@ -87,6 +98,8 @@
 			}
 
 			countdown();
+
+
 
 		</script>
 	</body>
