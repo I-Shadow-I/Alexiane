@@ -5,7 +5,7 @@
 		<style type="text/css">
 		body {
 			background: #f6f6f6;
-			background-image:url(/image/amour.jpg);
+			background-image:url(image/amour.jpg);
 			background-repeat: no-repeat;
 			background-attachment: fixed; 
 
@@ -19,12 +19,23 @@
 			left: 50%;
 			transform : translateX(-50%) translateY(-50%); 
 			text-align: center;
-			background-image: url(/image/nice.jpg);
+			background-image: url(image/nice.jpg);
 			background-size: 600px;
 			background-position: center;
 			border: 1px solid #999;
 			padding: 10px;
 			box-shadow: 0 0 5px 3px #ccc;
+
+		}
+
+		.buttomsetup{
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			text-align: center;
+			border-radius: 50px;
+			cursor: pointer;
+			background-color: pink;
 
 		}
 
@@ -37,13 +48,11 @@
 		.color {
 			color: red;
 		}
-
 		
 
 		</style>
 	</head>
-	<body>
-		
+	<body id= "b1">
 		<table class="countdownContainer">
 			
 			<tr class="info">
@@ -56,13 +65,19 @@
 				<td id="seconds">22</td>
 			</tr>
 			<tr class="color">
-				<td>Days</td>
-				<td>Hours</td>
-				<td>Minutes</td>
-				<td>Seconds</td>
+				<td><strong>Days</strong></td>
+				<td><strong>Hours</strong></td>
+				<td><strong>Minutes</strong></td>
+				<td><strong>Seconds</strong></td>
 			</tr>
 		</table>
+
+		<button class="buttomsetup" id="LoveButtom"> LOVE </button>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
 		<script type="text/javascript">
+			
 
 			function countdown(){
 				var now = new Date();
@@ -99,8 +114,10 @@
 
 			countdown();
 
-
-
 		</script>
+
+		<script src="style.js"></script>
+
+
 	</body>
 </HTML>
