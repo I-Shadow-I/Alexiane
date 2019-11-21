@@ -10,7 +10,7 @@ let btn = document.getElementById("LoveButtom")
 // create balloon
 const create_love = function(x,y){
   let love_img = document.createElement('img');
-  love_img.src = 'image/coeur.png';
+  love_img.src = '/image/coeur.png';
   love_img.style.height = '50px';
   love_img.style.width = '50px';
   love_img.style.position = 'fixed';
