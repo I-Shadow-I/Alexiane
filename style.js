@@ -21,14 +21,14 @@ let btn_Tel = document.getElementById("Tel_mod");
 //mode PC
 btn_PC.onclick= function(){
  document.body.style.backgroundImage = "url('/image/amour.jpg')";
-
+document.body.style.backgroundSize = "auto";
 }
 
 //mode Tel
 
 btn_Tel.onclick= function(){
   document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
-  document.body.style.height = '1000px';
+  document.body.style.backgroundSize = "auto";
 }
 
 
