@@ -28,6 +28,7 @@ btn_PC.onclick= function(){
 
 btn_Tel.onclick= function(){
   document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
+  document.body.style.height = '1000px';
 }
 
 
