@@ -28,7 +28,7 @@ document.body.style.backgroundSize = "auto";
 
 btn_Tel.onclick= function(){
   document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
-  document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundSize = "cover";
 }
 
 
