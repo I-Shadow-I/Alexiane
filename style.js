@@ -4,13 +4,40 @@ let add =(t,container=document.body)=>{
   container.appendChild(e);
   return e;}
 
-let btn = document.getElementById("LoveButtom")
+//create button
+let btn = document.getElementById("LoveButtom");
+
+let btn_PC = document.getElementById("PC_mod");
+
+let btn_Tel = document.getElementById("Tel_mod");
 
 
-// create balloon
+
+//creat mode
+//*******************************************************************
+
+
+
+//mode PC
+btn_PC.onclick= function(){
+ document.body.style.backgroundImage = "url('/image/amour.jpg')";
+
+}
+
+//mode Tel
+
+btn_Tel.onclick= function(){
+  document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
+}
+
+
+//*******************************************************************
+
+
+// create love
 const create_love = function(x,y){
   let love_img = document.createElement('img');
-  love_img.src = '/image/coeur.png';
+  love_img.src = 'image/coeur.png';
   love_img.style.height = '50px';
   love_img.style.width = '50px';
   love_img.style.position = 'fixed';
@@ -20,7 +47,8 @@ const create_love = function(x,y){
   return love_img
 }
 
-// move the balloon
+
+// move the love
 const move_love = function(el){
   let y = parseInt(el.style.top)
   y += 1;
@@ -49,3 +77,4 @@ btn.onclick = function(){
     let bal= create_love(random_number(1500),random_number(300));
     move_love(bal);});
 }
+
