@@ -32,7 +32,7 @@ btn_Tel.onclick= function(){
   document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
   document.body.style.backgroundSize = "cover";
   btn.style.left = '45%';
-  btn.style.fontSize = '2em';
+  btn.style.fontSize = '3em';
 }
 
 
