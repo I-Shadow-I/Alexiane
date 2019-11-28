@@ -1,4 +1,3 @@
-
 let add =(t,container=document.body)=>{
   e = document.createElement(t);
   container.appendChild(e);
@@ -6,6 +5,7 @@ let add =(t,container=document.body)=>{
 
 //create button
 let btn = document.getElementById("LoveButtom");
+let eggs = document.getElementById("max_love");
 
 let btn_PC = document.getElementById("PC_mod");
 
@@ -20,19 +20,21 @@ let btn_Tel = document.getElementById("Tel_mod");
 
 //mode PC
 btn_PC.onclick= function(){
-  document.body.style.backgroundImage = "url('/image/amour.jpg')";
-  document.body.style.backgroundSize = "auto";
-  btn.style.left = '50%';
-  btn.style.fontSize = '1em';
+ document.body.style.backgroundImage = "url('image/amour.jpg')";
+document.body.style.backgroundSize = "auto";
+btn.style.left = '50%';
+btn.style.fontSize = '1em';
 }
 
 //mode Tel
 
 btn_Tel.onclick= function(){
-  document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
+  document.body.style.backgroundImage = "url('image/mod_tel.jpg')";
   document.body.style.backgroundSize = "cover";
   btn.style.left = '45%';
-  btn.style.fontSize = '3em';
+  btn.style.fontSize = '2em';
+
+
 }
 
 
@@ -66,20 +68,29 @@ const move_love = function(el){
 }
 
 const random_number = function(max){
-		return Math.ceil(Math.random()*max);
+    return Math.ceil(Math.random()*max);
 }
 
 mult = function(times, f){
-	if(times <= 0){
-		return}
-	else{
-		f()
-		mult(times-1, f)}}
+  if(times <= 0){
+    return}
+  else{
+    f()
+    mult(times-1, f)}}
+
 
 
 btn.onclick = function(){
   mult(10, ()=>{
     let bal= create_love(random_number(1500),random_number(300));
     move_love(bal);});
+
 }
+
+eggs.onclick = function(){
+  mult(1000, ()=>{
+    let bal= create_love(random_number(1500),random_number(300));
+    move_love(bal);});
+}
+
 
