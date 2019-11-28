@@ -22,7 +22,7 @@ let btn_Tel = document.getElementById("Tel_mod");
 btn_PC.onclick= function(){
   document.body.style.backgroundImage = "url('/image/amour.jpg')";
   document.body.style.backgroundSize = "auto";
-  btn.style.left = '45%';
+  btn.style.left = '50%';
   btn.style.fontSize = '1em';
 }
 
