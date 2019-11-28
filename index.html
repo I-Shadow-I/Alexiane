@@ -36,8 +36,11 @@
 			border-radius: 50px;
 			cursor: pointer;
 			background-color: pink;
+			
 
 		}
+
+	
 
 
 		.info {
@@ -49,12 +52,25 @@
 			color: red;
 		}
 
+		.invisible {
+			position: absolute;
+			top: 80%;
+			left: 45%;
+			text-align: center;
+			border-radius: 50px;
+			cursor: pointer;
+			background-color: cyan;
+
+
+		} 
+
 		
 		
 
 		</style>
 	</head>
 	<body >
+		
 		<table class="countdownContainer">
 			
 			<tr class="info">
@@ -74,13 +90,33 @@
 			</tr>
 		</table>
 
+		
+
 		<button class="buttomsetup" id="LoveButtom"> LOVE </button>
 		<button id="PC_mod">Mode Pc</button>
 		<button id="Tel_mod">Mode Tel</button>
+		<button style="display:none" class="invisible" id="max_love"> Je t'aime mon ptit coeur </button>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 		<script type="text/javascript">
+
+
+			$(document).ready(function(){
+				$('#max_love').click(function(){
+					$('#max_love').hide();
+				})
+			});
+
+			document.onkeydown = function(event){
+				var key_press = String.fromCharCode(event.keyCode);
+				var key_code = event.keyCode;
+
+				if (key_code == 65){
+					$('#max_love').show();
+				}
+				
+			}
 			
 
 			function countdown(){
