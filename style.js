@@ -20,8 +20,10 @@ let btn_Tel = document.getElementById("Tel_mod");
 
 //mode PC
 btn_PC.onclick= function(){
- document.body.style.backgroundImage = "url('/image/amour.jpg')";
-document.body.style.backgroundSize = "auto";
+  document.body.style.backgroundImage = "url('/image/amour.jpg')";
+  document.body.style.backgroundSize = "auto";
+  btn.style.left = '45%';
+  btn.style.fontSize = '1em';
 }
 
 //mode Tel
@@ -29,6 +31,8 @@ document.body.style.backgroundSize = "auto";
 btn_Tel.onclick= function(){
   document.body.style.backgroundImage = "url('/image/mod_tel.jpg')";
   document.body.style.backgroundSize = "cover";
+  btn.style.left = '45%';
+  btn.style.fontSize = '2em';
 }
 
 
