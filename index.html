@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>15 Aout 2020</title>
+		<title>14 Juillet 2020</title>
 		<style type="text/css">
 		body {
+
 			background: #f6f6f6;
-			background-image:url(image/amour.jpg);
+			background-image:url(image/Capture.JPG);
+			background-size: cover;
+			background-attachment: fixed;
 			background-repeat: no-repeat;
-			background-attachment: fixed; 
+			
 
 			
 		}	
@@ -19,23 +22,25 @@
 			left: 50%;
 			transform : translateX(-50%) translateY(-50%); 
 			text-align: center;
-			background-image: url(image/nice.jpg);
-			background-size: 600px;
+			background-image: url(image/appart.jpg);
+			background-size: cover;
 			background-position: center;
-			border: 1px solid #999;
+			background-repeat: no-repeat;
+			border: 3px solid #fff;
 			padding: 10px;
-			box-shadow: 0 0 5px 3px #ccc;
+			box-shadow: 0 0 100px 20px #000;
 
 		}
 
 		.buttomsetup{
 			position: absolute;
 			top: 75%;
-			left: 50%;
+			left: 47%;
 			text-align: center;
 			border-radius: 50px;
 			cursor: pointer;
 			background-color: pink;
+			font-size: 175%;
 			
 
 		}
@@ -74,7 +79,7 @@
 		<table class="countdownContainer">
 			
 			<tr class="info">
-				<td colspan="4">-     15 Mai 2020     -</td>
+				<td colspan="4">-     14 Juillet 2020     -</td>
 			</tr>
 			<tr class="info">
 				<td id="days">120</td>
@@ -93,8 +98,7 @@
 		
 
 		<button class="buttomsetup" id="LoveButtom"> LOVE </button>
-		<button id="PC_mod">Mode Pc</button>
-		<button id="Tel_mod">Mode Tel</button>
+		
 		<button style="display:none" class="invisible" id="max_love"> Je t'aime mon ptit coeur </button>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -121,7 +125,7 @@
 
 			function countdown(){
 				var now = new Date();
-				var eventDate = new Date(2020, 4, 15);
+				var eventDate = new Date(2020, 6, 14);
 				
 				var currentTiime = now.getTime();
 				var eventTime = eventDate.getTime();
