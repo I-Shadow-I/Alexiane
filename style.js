@@ -7,38 +7,8 @@ let add =(t,container=document.body)=>{
 let btn = document.getElementById("LoveButtom");
 let eggs = document.getElementById("max_love");
 
-let btn_PC = document.getElementById("PC_mod");
-
-let btn_Tel = document.getElementById("Tel_mod");
 
 
-
-//creat mode
-//*******************************************************************
-
-
-
-//mode PC
-btn_PC.onclick= function(){
- document.body.style.backgroundImage = "url('image/amour.jpg')";
-document.body.style.backgroundSize = "auto";
-btn.style.left = '50%';
-btn.style.fontSize = '1em';
-}
-
-//mode Tel
-
-btn_Tel.onclick= function(){
-  document.body.style.backgroundImage = "url('image/mod_tel.jpg')";
-  document.body.style.backgroundSize = "cover";
-  btn.style.left = '45%';
-  btn.style.fontSize = '2em';
-
-
-}
-
-
-//*******************************************************************
 
 
 // create love
